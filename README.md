@@ -98,6 +98,23 @@ Add to `~/.continue/config.json`:
 
 GLM-5.1 is the flagship model. #1 open-source on LMArena Code, #3 globally. Open-source (you can run it locally if you have the hardware). The z.ai plan is just a convenient way to access it via API without managing infrastructure.
 
+## Benchmark results
+
+Real-world tests (April 2026) — see [MODEL-TEST-RESULTS.md](MODEL-TEST-RESULTS.md) for full data.
+
+| Model | Speed | Coding | Reasoning | Rate Limits |
+|-------|-------|--------|-----------|-------------|
+| glm-5.1 | 3.7s | 4.5s | 9.0s | OK |
+| glm-5 | 4.9s | 5.6s | 7.9s | OK |
+| glm-4.7 | **1.6s** | **2.1s** | **3.6s** | **Best (5/5)** |
+| glm-4.6 | 2.6s | 20.7s | 2.8s | OK |
+| glm-4.5-air | 1.6s | 4.7s | 14.9s | OK |
+
+Key findings:
+- **glm-4.7** is the fastest and most rate-limit-friendly
+- **glm-5.1** has the best quality for complex tasks
+- **glm-4.5** and **glm-5-turbo** can hit rate limits under burst load
+
 ## License
 
 MIT
