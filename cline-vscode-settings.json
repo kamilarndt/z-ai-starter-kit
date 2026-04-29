@@ -1,0 +1,6 @@
+{
+  "cline.apiProvider": "openai-compatible",
+  "cline.apiKey": "YOUR_ZAI_API_KEY",
+  "cline.baseUrl": "https://api.z.ai/v1",
+  "cline.model": "glm-5.1"
+}

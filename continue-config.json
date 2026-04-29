@@ -1,0 +1,11 @@
+{
+  "models": [
+    {
+      "title": "z.ai GLM-5.1",
+      "provider": "openai",
+      "model": "glm-5.1",
+      "apiKey": "YOUR_ZAI_API_KEY",
+      "apiBase": "https://api.z.ai/v1"
+    }
+  ]
+}

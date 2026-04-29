@@ -1,0 +1,11 @@
+{
+  "providers": {
+    "z.ai": {
+      "apiKey": "YOUR_ZAI_API_KEY",
+      "baseUrl": "https://api.z.ai/v1",
+      "model": "glm-5.1"
+    }
+  },
+  "defaultProvider": "z.ai",
+  "temperature": 0.7
+}
